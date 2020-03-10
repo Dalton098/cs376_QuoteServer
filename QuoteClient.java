@@ -78,7 +78,6 @@ public class QuoteClient {
      * @throws IOException
      */
     public static void printQuotes(BufferedReader in, int numQuotes) throws IOException {
-        /* read the date from the socket */
         String line;
         int i = 0;
         while ((line = in.readLine()) != null && i < numQuotes) {

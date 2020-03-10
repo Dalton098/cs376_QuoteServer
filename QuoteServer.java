@@ -42,7 +42,7 @@ public class QuoteServer {
                 int numQuotes = Integer.parseInt(in.readLine());
                 String genre = in.readLine();
 
-                // Checking if quotes exist for inputted genre
+                // Checking if a file exist for inputted genre
                 File temp = new File(genre+".txt");
                 if (temp.exists()) {
 
