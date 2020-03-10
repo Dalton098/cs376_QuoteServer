@@ -5,9 +5,10 @@ import java.io.*;
 
 /**
  * Quote Server
- * Interacts with the QuoteClient to determine how many quotes
- * it needs to retrieve and what genre to pull the quotes from. Uses the quote
- * files included with submission to retrieve quotes.
+ * Interacts with the QuoteClient to determine how many quotes it needs to 
+ * retrieve and what genre to pull the quotes from. Uses the quote files 
+ * included with submission to retrieve quotes. Sends a string of the quotes
+ * back to the client so that the client can print the quotes.
  * 
  * Instructions:
  * -   To compile the file run: javac QuoteServer.java
@@ -16,11 +17,13 @@ import java.io.*;
  *      The & puts the QuoteServer in the background
  * 
  * CS 376
+ * 3/10/2020
  * @author Dalton Rothenberger
  */
 public class QuoteServer {
 
     public static void main(String[] args) {
+        
         try {
             ServerSocket sock = new ServerSocket(6013);
 

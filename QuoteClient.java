@@ -14,11 +14,13 @@ import java.io.*;
  * -   To run the file (after it has been compiled): java QuoteClient [numQuotes] [genre]
  * 
  * CS 376
+ * 3/10/2020
  * @author Dalton Rothenberger
  */
 public class QuoteClient {
 
     public static void main(String[] args) {
+
         int numInputs = 2;
         if (args.length == numInputs) {
 
